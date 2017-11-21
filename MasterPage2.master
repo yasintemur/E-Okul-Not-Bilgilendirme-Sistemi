@@ -1,0 +1,92 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage2.master.cs" Inherits="MasterPage2" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        </style>
+</head>
+<body>
+   <form id="form1" runat="server">
+    <div id="topPan"><a href="index.html"><img src="images/logo.png" title="Green Solutions" alt="Green Solutions" width="204" height="57" border="0"/></a>
+	<ul>
+		<li><span>Anasayfa</span></li>
+		<li><a href="#">Milli Egitim Bakanligi</a></li>
+		<li><a href="#">Iletisim</a></li>
+	</ul>
+</div>
+
+<div id="headerPan">
+  <div id="headerPanleft">
+  	    <div id="ourblog">
+			<h2>Millî Egitim Bakanligi</h2>
+			<p>Resmi Web Sitesi</p>
+			<a href="#">&nbsp;</a>
+		</div>
+        <div id="possib">
+			<h2>Hayat Boyu Ögrenme</h2>
+			<p>Web Portali</p>
+			<a href="#">&nbsp;</a>
+		</div>
+		<div id="solution">
+			<h2>Yüksekögretim Resmi Burslu </h2>
+			<p>Web Portali</p>
+			<a href="#">&nbsp;</a>
+		</div>
+  </div>
+	
+	<h1>best Fresh Solution</h1>
+</div>
+
+<div id="bodyPan">
+  <div id="leftPan">
+    <div id="leftmemberPan">
+	<h2>ögretmen <span>girisi</span></h2>
+	&nbsp;
+	   <div id="leftPango">&nbsp;&nbsp;
+           <asp:Button ID="Button1" runat="server" onclick="Button1_Click" Text="ÇIKIŞ" />
+        </div>
+	    Ho&#351;geldiniz:<br />
+&nbsp;
+        <asp:Label ID="Label2" runat="server"></asp:Label>
+	</div>
+	<h4 id="baglantii">Dis Baglantilar</h4>
+	<ul>
+	<li><a href="#">MEBBIS</a></li>
+	<li><a href="#">Milli Egitim Bkanligi</a> </li>
+	<li><a href="#">REBUS</a></li>
+	</ul>
+  </div>
+  <div id="rightPan">
+  	<div id="rightbodyPan" class="style1">
+          <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+          </asp:ContentPlaceHolder>
+	</div>
+  </div>
+</div>
+
+<div id="footerPan">
+	<div id="footernextPan">
+	<ul>
+  <li><a href="#">Anasayfa </a>| </li>
+  <li><a href="#">Milli Egitim Baknligi</a> | </li>
+  <li><a href="#">REBUS </a>| </li>
+  <li><a href="#">Iltisim</a> | </li>
+  </ul>
+   <p>MEB Bilgi Islem Dairesi Baskanligi E-Posta: e-okul@meb.gov.tr</p>
+	</div>
+</div>
+    </form>
+</body>
+</html>
